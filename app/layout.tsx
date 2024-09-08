@@ -39,9 +39,10 @@ export const metadata: Metadata = {
 const cx = (...classes) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
-  children,
+  children, modal
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  modal: React.ReactNode;
 }) {
   return (
     <html
@@ -56,6 +57,7 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
+          {modal}
           <Footer />
           <Analytics />
           <SpeedInsights />

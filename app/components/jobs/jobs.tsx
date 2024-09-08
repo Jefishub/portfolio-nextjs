@@ -19,7 +19,7 @@ export function Jobs({ allJobs }: { allJobs: Job[] }) {
           <Link
             key={job.slug}
             className="flex flex-col space-y-1 mb-4"
-            href={`/job/${job.slug}`}
+            href={`/jobs/${job.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
               <p className="text-neutral-600 dark:text-neutral-400 text-xs tabular-nums">
