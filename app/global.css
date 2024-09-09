@@ -24,6 +24,7 @@
     --sh-keyword: #f47067;
     --sh-string: #0fa295;
   }
+
   html {
     color-scheme: dark;
   }
@@ -56,7 +57,7 @@ html {
   content: '#';
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
   @apply visible;
 }
 
@@ -115,7 +116,7 @@ html {
   @apply list-decimal pl-6;
 }
 
-.prose > :first-child {
+.prose> :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -126,8 +127,10 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Remove Safari input shadow on mobile */
@@ -152,16 +155,26 @@ table {
 /* Target the scrollbar */
 /* Target the scrollbar */
 ::-webkit-scrollbar {
-  width: 4px; /* Set the width of the scrollbar */
+  width: 4px;
+  /* Set the width of the scrollbar */
 }
 
 /* Target the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set color of the thumb */
-  border-radius: 10px; /* Make it rounded */
+  background-color: #888;
+  /* Set color of the thumb */
+  border-radius: 10px;
+  /* Make it rounded */
 }
 
 /* Target the scrollbar track (the background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: #000000; /* Set track color */
+  background: #000000;
+  /* Set track color */
+}
+
+.fadeout {
+  /* Mask gradient to fade out the content */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 }
