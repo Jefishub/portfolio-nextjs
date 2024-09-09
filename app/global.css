@@ -173,8 +173,10 @@ table {
   /* Set track color */
 }
 
-.fadeout {
-  /* Mask gradient to fade out the content */
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+@media (max-width: 768px) {
+  .fadeout {
+    /* Mask gradient to fade out the content */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+  }
 }

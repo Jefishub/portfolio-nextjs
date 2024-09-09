@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import myImage from '../public/img/JereWSP.jpg'
 import { MainText } from './components/mainText'
@@ -15,7 +14,7 @@ export default function Page() {
       </div>
       <Image src={myImage} alt={'My image'} className='rounded-lg' />
       <MainText />
-      <div className='mt-8'>        
+      <div className='mt-8'>
         <JobsWrapper />
       </div>
     </section>

@@ -1,11 +1,9 @@
-'use client'
-import { useState } from "react"
+import { ReadMoreWrapper } from "./ReadMoreWrapper"
 
 export const MainText = () => {
-    const [show, setShow] = useState(false)
     return (
-        <div onClick={() => setShow(!show)} className="flex flex-col gap-2 cursor-pointer text-justify">
-            <p className={` ${show ? '' : 'line-clamp-10 fadeout'}`} >
+        <ReadMoreWrapper>
+            <p>
                 Welcome! I’m a passionate Software Engineer with a knack for solving
                 complex problems using elegant, efficient code. With a strong foundation in physics,
                 I bring a unique, analytical approach to software development, blending scientific
@@ -20,7 +18,6 @@ export const MainText = () => {
                 <br></br><br></br>
                 {"with a little help from ChatGPT... of course ;)"}
             </p>
-            <p className="text-xs">{show ? "show less ↑" : "show more ↓"}</p>
-        </div>
+        </ReadMoreWrapper>
     )
 }
