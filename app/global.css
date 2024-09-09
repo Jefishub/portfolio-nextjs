@@ -148,3 +148,20 @@ table {
 .title {
   text-wrap: balance;
 }
+
+/* Target the scrollbar */
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+}
+
+/* Target the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set color of the thumb */
+  border-radius: 10px; /* Make it rounded */
+}
+
+/* Target the scrollbar track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #000000; /* Set track color */
+}

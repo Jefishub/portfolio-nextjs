@@ -4,5 +4,6 @@ export type Job = {
     enddt: Date,
     employer: string,
     title: string,
-    slug: string
+    slug: string,
+    description: string
   }

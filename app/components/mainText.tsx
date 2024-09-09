@@ -4,7 +4,7 @@ import { useState } from "react"
 export const MainText = () => {
     const [show, setShow] = useState(false)
     return (
-        <div onClick={() => setShow(!show)} className="flex flex-col gap-2 cursor-pointer">
+        <div onClick={() => setShow(!show)} className="flex flex-col gap-2 cursor-pointer text-justify">
             <p className={` ${show ? '' : 'line-clamp-10'}`} >
                 Welcome! I’m a passionate Software Engineer with a knack for solving
                 complex problems using elegant, efficient code. With a strong foundation in physics,
