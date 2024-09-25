@@ -3,10 +3,10 @@ import { Job as JobType } from "app/type/types"
 import { formatDate } from "app/util/util"
 
 export const JobShort = ({ job }: { job: JobType }) => {
-    return <JobContainer>
+    return <JobListContainer>
         <DateBox start={job.startdt} end={job.enddt} />
         <EmployerAndTitleBox employer={job.employer} title={job.title} />
-    </JobContainer>
+    </JobListContainer>
 }
 
 export const JobFull = ({ job }: { job: JobType }) => {
@@ -18,12 +18,16 @@ export const JobFull = ({ job }: { job: JobType }) => {
     </JobContainer>
 }
 
-const JobContainer = ({ children }) => {
+const JobListContainer = ({ children }) => {
     return <div className="w-full flex flex-col group hover:scale-[1.02]">
         {children}
     </div>
 }
-
+const JobContainer = ({ children }) => {
+    return <div className="w-full flex flex-col">
+        {children}
+    </div>
+}
 const DateBox = ({ start, end }: { start: Date, end: Date | null }) => {
     return <p className="text-neutral-600 dark:text-neutral-400 text-xs tabular-nums">
         {formatDate(start)} - {end ? formatDate(end) : "Present"}
@@ -44,7 +48,7 @@ const DescriptionBox = ({ desc }: { desc: string }) => {
 
 const KeywordsBox = ({ keywords }: { keywords: string[] | undefined }) => {
     return keywords ? <div className="flex flex-row flex-wrap gap-2 justify-center mt-4 w-full">
-        {keywords.map((word) => <KeywordBadge keyword={word} />)}
+        {keywords.map((word, i) => <KeywordBadge key={i} keyword={word} />)}
     </div> : null
 }
 
