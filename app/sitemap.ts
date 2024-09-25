@@ -6,7 +6,7 @@ export default async function sitemap() {
     url: `${baseUrl}/jobs/${job.slug}`
   }))
 
-  let routes = ['', '/jobs'].map((route) => ({
+  let routes = ['', '/jobs', '/apps'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
