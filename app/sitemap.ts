@@ -1,13 +1,13 @@
-import { jobs as jobList } from './jobs/mock'
+import { jobs as jobList } from './jobs/jobList'
 
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const baseUrl = 'https://jeremanni.com'
 
 export default async function sitemap() {
   let jobs = jobList.map((job) => ({
-    url: `${baseUrl}/blog/${job.slug}`
+    url: `${baseUrl}/jobs/${job.slug}`
   }))
 
-  let routes = ['', '/blog'].map((route) => ({
+  let routes = ['', '/jobs'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
