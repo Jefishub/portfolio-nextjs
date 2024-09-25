@@ -45,7 +45,7 @@ export default function RootLayout({
       lang="en"
       className=' overflow-y-scroll'
     >
-      <body className="max-w-3xl mx-auto">
+      <body className="max-w-5xl mx-auto">
           <main className="flex-auto min-w-0 flex flex-col px-4">
             <Navbar />
             {children}
