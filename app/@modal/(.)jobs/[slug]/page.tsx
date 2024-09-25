@@ -1,6 +1,6 @@
 'use client'
 
-import { jobs } from "app/jobs/jobList";
+import { jobs } from "app/(pages)/jobs/jobList"
 import Modal from "./modal";
 import { JobFull } from "app/components/jobs/Job";
 

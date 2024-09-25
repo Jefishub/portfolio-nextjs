@@ -1,5 +1,4 @@
-import { jobs as jobList } from './jobs/jobList'
-
+import { jobs as jobList } from './(pages)/jobs/jobList'
 export const baseUrl = 'https://jeremanni.com'
 
 export default async function sitemap() {

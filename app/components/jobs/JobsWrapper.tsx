@@ -1,8 +1,9 @@
 'use client'
-import { jobs } from "app/jobs/jobList"
+
 import { Jobs } from "./jobs"
 import { useState } from "react"
 import { Job } from "app/type/types"
+import { jobs } from "app/(pages)/jobs/jobList"
 
 const JOBCOUNT = 3
 
