@@ -10,9 +10,10 @@ export default function Page() {
         <h1 className="text-2xl font-semibold tracking-tighter">
           Jere Manni
         </h1>
-        <div>MSc Physics, BBA (Information Technology)</div>
+        <div className='text-xs'>MSc Physics</div>
+        <div className='text-xs'>BBA (Information Technology)</div>
       </div>
-      <Image src={myImage} alt={'My image'} className='rounded-lg' />
+      <Image src={myImage} alt={'My image'} className='rounded-lg w-full max-w-80' />
       <MainText />
       <div className='mt-8'>
         <JobsWrapper />
