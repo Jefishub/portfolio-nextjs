@@ -1,5 +1,5 @@
 'use client'
-import { jobs } from "app/jobs/mock"
+import { jobs } from "app/jobs/jobList"
 import { Jobs } from "./jobs"
 import { useState } from "react"
 import { Job } from "app/type/types"

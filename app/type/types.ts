@@ -1,9 +1,10 @@
 
 export type Job = {
     startdt: Date,
-    enddt: Date,
+    enddt: Date | null,
     employer: string,
     title: string,
     slug: string,
-    description: string
+    description: string,
+    keywords?: string[]
   }

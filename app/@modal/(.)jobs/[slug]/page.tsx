@@ -1,5 +1,6 @@
 'use client'
-import { jobs } from "app/jobs/mock";
+
+import { jobs } from "app/jobs/jobList";
 import Modal from "./modal";
 import { JobFull } from "app/components/jobs/Job";
 
@@ -11,7 +12,8 @@ export default function JobModal({
     const job = jobs.find((job) => job.slug === slug)
     if (!job) return null
     return <Modal>
-        <JobFull job={job} />
+        <div>
+            <JobFull job={job} />
+        </div>
     </Modal>
-
 }

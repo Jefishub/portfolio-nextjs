@@ -10,11 +10,13 @@ export default function Page() {
         <h1 className="text-2xl font-semibold tracking-tighter">
           Jere Manni
         </h1>
-        <div className='text-xs'>MSc Physics</div>
-        <div className='text-xs'>BBA (Information Technology)</div>
+        <div className='text-xs'>MSc. Physics</div>
+        <div className='text-xs'>BBA Information Technology</div>
       </div>
-      <Image src={myImage} alt={'My image'} className='rounded-lg w-full max-w-80' />
-      <MainText />
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+        <Image src={myImage} alt={'My image'} className='rounded-lg w-full max-w-80 order-1 sm:order-3' />
+        <MainText />
+      </div>
       <div className='mt-8'>
         <JobsWrapper />
       </div>
