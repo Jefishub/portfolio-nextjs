@@ -5,7 +5,7 @@ import { JobsWrapper } from './components/jobs/JobsWrapper'
 
 export default function Page() {
   return (
-    <section className='flex flex-col gap-4'>
+    <main className='flex flex-col gap-4'>
       <div>
         <h1 className="text-2xl font-semibold tracking-tighter">
           Jere Manni
@@ -20,6 +20,6 @@ export default function Page() {
       <div className='mt-8'>
         <JobsWrapper />
       </div>
-    </section>
+    </main>
   )
 }
