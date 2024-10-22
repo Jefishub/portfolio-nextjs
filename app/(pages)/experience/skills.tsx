@@ -1,4 +1,5 @@
 import React from "react"
+import { skillsList } from "./skillList";
 
 export const SkillsCard = () => {
     return (
@@ -22,18 +23,20 @@ export const SkillsCard = () => {
                             <div className="col-span-1 h-6">{skill.name}</div>
 
                             {/* Second column: Skill progress bars */}
-                            <div className="grid grid-rows-2 grid-cols-11 col-span-11 h-6 gap-1">
-                                {/* Work experience (first row) */}
-                                <div
-                                    className={"bg-amber-300 row-start-1 h-2"}
-                                    style={{gridColumn: `span ${skill.work * 2 < 11 ? skill.work * 2 : 11}`}}
-                                ></div>
+                            <div className="content-center col-span-11">
+                                <div className="grid grid-cols-11">
+                                    {/* Work experience (first row) */}
+                                    <div
+                                        className={"bg-amber-300 row-start-1 h-2"}
+                                        style={{ gridColumn: `span ${skill.work * 2 < 11 ? skill.work * 2 : 11}`, display: skill.work === 0 ? 'none' : 'block' }}
+                                    ></div>
 
-                                {/* Hobby experience (second row) */}
-                                <div
-                                    className={"bg-blue-300 row-start-2 h-1"}
-                                    style={{gridColumn: `span ${skill.hobby * 2 * 2 < 11 ? skill.hobby * 2 : 11}`}}
-                                ></div>
+                                    {/* Hobby experience (second row) */}
+                                    <div
+                                        className={"bg-blue-300 row-start-2 h-1"}
+                                        style={{ gridColumn: `span ${skill.hobby * 2 * 2 < 11 ? skill.hobby * 2 : 11}` }}
+                                    ></div>
+                                </div>
                             </div>
                         </React.Fragment>
                     )
@@ -46,36 +49,3 @@ export const SkillsCard = () => {
         </div>
     );
 };
-
-const skillsList = [
-    {
-        name: "Javascript",
-        work: 3,
-        hobby: 2
-    },
-    {
-        name: "Typescript",
-        work: 1,
-        hobby: 2
-    },
-    {
-        name: "Python",
-        work: 0.5,
-        hobby: 1
-    },
-    {
-        name: "SQL",
-        work: 3,
-        hobby: 2
-    },
-    {
-        name: "React",
-        work: 1,
-        hobby: 2
-    },
-    {
-        name: "Next.JS",
-        work: 0,
-        hobby: 2
-    }
-]

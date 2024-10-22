@@ -20,7 +20,7 @@ export const AppCard = (
             {Icon}
             <div className="text-xs">{description}</div>
             <div className="flex flex-row flex-wrap gap-2 mt-4 justify-center">
-                {keywords.map((word) => <BlueBadge keyword={word} />)}
+                {keywords.map((word, i) => <BlueBadge key={i} keyword={word} />)}
             </div>
         </div>
     </BasicCard>
