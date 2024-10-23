@@ -8,7 +8,8 @@ export const jobs: Job[] = [
     title: "Software Designer",
     slug: "software-point-software-designer",
     description: `Coding and configurating a Laboratory Information Management System (LIMS) - LabVantage
-    for our clients based on their requests. Designing new features and fixing existing bugs.`,
+    for our clients based on their requests. Designing new features and fixing existing bugs. 
+    Working with multiple multinational clients parallel.`,
     keywords: ['Java', 'Javascript', 'SQL', 'LIMS']
   },
   {
@@ -17,9 +18,8 @@ export const jobs: Job[] = [
     employer: "CGI",
     title: "Consultant",
     slug: "cgi-consultant",
-    description: `Mobile application development with Flutter/Dart
-    Mobile application testing
-    Accessibility implementation`,
+    description: `Mobile application development and testing with Flutter/Dart on Turva-app for Turva insurance company.
+    Accessibility implementation and modifications to older messaging systems.`,
     keywords: ['Flutter', 'Java', 'Javascript', 'SQL']
   },
   {

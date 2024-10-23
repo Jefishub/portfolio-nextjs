@@ -19,7 +19,7 @@ export function Jobs({ allJobs }: { allJobs: JobType[] }) {
           <Link
             key={job.slug}
             className="flex flex-col space-y-1 mb-4"
-            href={`/jobs/${job.slug}`}
+            href={`/experience/jobs/${job.slug}`}
           >
             <JobShort job={job} />
           </Link>

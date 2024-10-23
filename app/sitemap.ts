@@ -1,12 +1,12 @@
-import { jobs as jobList } from './(pages)/jobs/jobList'
+import { jobs as jobList } from './(pages)/experience/jobList'
 export const baseUrl = 'https://jeremanni.com'
 
 export default async function sitemap() {
   let jobs = jobList.map((job) => ({
-    url: `${baseUrl}/jobs/${job.slug}`
+    url: `${baseUrl}/experience/jobs/${job.slug}`
   }))
 
-  let routes = ['', '/jobs', '/apps'].map((route) => ({
+  let routes = ['', '/experience', '/apps'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))

@@ -1,9 +1,9 @@
 'use client'
 
-import { jobs } from "app/(pages)/jobs/jobList"
-import Modal from "./modal";
+import { jobs } from "app/(pages)/experience/jobList";
 import { JobFull } from "app/components/jobs/Job";
 import { use } from 'react'
+import Modal from "./modal";
 export default function JobModal({
     params,
   }: {

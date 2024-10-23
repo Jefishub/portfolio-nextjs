@@ -1,5 +1,5 @@
 import { Jobs } from "app/components/jobs/jobs"
-import { jobs } from "./jobList"
+import { jobs } from "../jobList"
 
 export default function Page() {
     return <div>
