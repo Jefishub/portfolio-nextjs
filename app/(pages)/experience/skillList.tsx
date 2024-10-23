@@ -16,7 +16,7 @@ export const skillsList = [
     },
     {
         name: "Typescript",
-        work: 1,
+        work: 0.5,
         hobby: 2
     },
     {
@@ -27,8 +27,8 @@ export const skillsList = [
     
     {
         name: "React",
-        work: 1,
-        hobby: 2
+        work: 0.5,
+        hobby: 3
     },
     {
         name: "Next.JS",

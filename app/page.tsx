@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import myImage from '../public/img/JereWSP.jpg'
 import { MainText } from './components/mainText'
-import { JobsWrapper } from './components/jobs/JobsWrapper'
+import { JobsBox } from './components/jobs/JobsBox'
 
 export default function Page() {
   return (
@@ -18,7 +18,7 @@ export default function Page() {
         <MainText />
       </div>
       <div className='mt-8'>
-        <JobsWrapper />
+        <JobsBox />
       </div>
     </main>
   )
