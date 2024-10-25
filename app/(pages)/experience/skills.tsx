@@ -34,7 +34,7 @@ export const SkillsCard = () => {
                                     {/* Hobby experience (second row) */}
                                     <div
                                         className={"bg-blue-300 row-start-2 h-1"}
-                                        style={{ gridColumn: `span ${skill.hobby * 2 * 2 < 11 ? skill.hobby * 2 : 11}` }}
+                                        style={{ gridColumn: `span ${skill.hobby * 2 < 11 ? skill.hobby * 2 : 11}` }}
                                     ></div>
                                 </div>
                             </div>
